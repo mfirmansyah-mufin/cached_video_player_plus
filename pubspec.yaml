@@ -3,6 +3,7 @@ description: "Original video_player plugin with the superpower of caching embedd
 version: 2.0.0
 homepage: https://outdatedguy.rocks
 repository: https://github.com/OutdatedGuy/cached_video_player_plus
+publish_to: none
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -13,9 +14,12 @@ dependencies:
     sdk: flutter
   flutter_cache_manager: ^3.3.0
   get_storage: ^2.1.1
-  video_player_android: ^2.4.12
   video_player_avfoundation: ^2.5.6
   video_player_platform_interface: ^6.2.2
+  video_player_android:
+    git:
+      url: https://github.com/mfirmansyah-mufin/video-player-android.git
+      ref: master
 
 dev_dependencies:
   flutter_lints: ^3.0.0
